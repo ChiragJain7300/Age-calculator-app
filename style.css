@@ -23,7 +23,7 @@ label {
   letter-spacing: 3px;
 }
 input {
-    font-weight: 700;
+    font-weight: 800 !important;
 }
 input::placeholder {
   font-size: 18px;
