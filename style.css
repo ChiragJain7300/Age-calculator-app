@@ -1,0 +1,101 @@
+* {
+  font-family: "Poppins", sans-serif;
+  color: hsl(0, 0%, 8%);
+  margin: 0;
+  border: 0;
+}
+.mainCont {
+  width: 100%;
+  height: 100vh;
+  background-color: hsl(0, 0%, 86%);
+  box-sizing: border-box;
+  padding-top: 100px;
+}
+.calcuBody {
+  width: 95%;
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 25px;
+  border-bottom-right-radius: 80px 80px;
+}
+label {
+  color: hsl(0, 1%, 44%);
+  letter-spacing: 3px;
+}
+input::placeholder {
+  font-size: 18px;
+  color: hsl(0, 1%, 44%) !important;
+}
+.dayError,
+.monthError,
+.yearError {
+  color: red;
+  font-size: 10px;
+}
+.errorText {
+  display: none;
+}
+.seperator {
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+}
+.seperator hr {
+  width: 40%;
+  margin: 0;
+}
+.imgBox {
+  background-color: hsl(259, 100%, 65%);
+  width: 70px;
+  padding: 20px;
+  border-radius: 55%;
+  text-align: center;
+  box-sizing: border-box;
+}
+.imgBox:hover {
+  background-color: hsl(0, 0%, 8%);
+}
+.imgBox img {
+  width: 100%;
+}
+.result {
+  font-size: 2.5em;
+  line-height: 1.1;
+  font-weight: 800;
+  font-style: italic;
+}
+.result span {
+  color: hsl(259, 100%, 65%);
+}
+/* #day:invalid {
+  border-color: red;
+} */
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  left: 15px;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media only screen and (min-width: 768px) {
+  .mainCont {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .calcuBody {
+    width: 50%;
+    padding: 40px !important;
+  }
+  .result {
+    font-size: 5vw;
+  }
+  .seperator hr {
+    width: 45%;
+  }
+}

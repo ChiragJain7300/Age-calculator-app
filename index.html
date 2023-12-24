@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Age calculator app</title>
+
+  <!-- font CSS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,500;1,800&display=swap" rel="stylesheet">
+  <!-- BS CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="./style.css">
+  
+</head>
+<body>
+  <div class="container-fluid mainCont">
+    <div class="container calcuBody py-5 px-4">
+      <form class="row justify-content-center">
+        <div class="row w-100 mb-4 gx-3">
+          <div class="col-4">
+            <label for="inputCity" class="form-label">DAY</label>
+            <input type="number" class="form-control form-control-lg formInput" id="day" aria-describedby="emailHelp" placeholder="DD">
+            <div class="form-text dayError errorText">This field is required</div>
+          </div>
+          <div class="col-4">
+            <label for="inputCity" class="form-label">MONTH</label>
+            <input type="number" class="form-control form-control-lg formInput" id="month" aria-describedby="emailHelp" placeholder="MM">
+            <div class="form-text monthError errorText">This field is required</div>
+          </div>
+          <div class="col-4">
+            <label for="inputCity" class="form-label">YEAR</label>
+            <input type="number" class="form-control form-control-lg formInput" id="year" aria-describedby="emailHelp" placeholder="YYYY">
+            <div class="form-text yearError errorText">This field is required</div>
+          </div>
+        </div>
+
+        <div class="row mx-0 mb-4 seperator">
+          <hr class="order-1 order-md-1">
+          <button type="submit" class="btn imgBox order-2 order-md-3">
+            <img src="./assets/images/icon-arrow.svg" alt="arrowImg">
+          </button>
+          <hr class="order-3 order-md-2">
+        </div>
+      </form> 
+
+      <div class="row result mb-3 justify-content-center">
+        <div class="col-12">
+          <span class="years">--</span> years
+        </div>
+        <div class="col-12">
+          <span class="months">--</span> months
+        </div>
+        <div class="col-12">
+          <span class="days">--</span> days
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://github.com/ChiragJain7300">CHIRAG JAIN</a>.
+  </div>
+
+  <!-- BS JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  <!-- jquery js -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <!-- JS -->
+  <script src="./index.js"></script>
+</body>
+</html>
