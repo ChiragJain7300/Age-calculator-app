@@ -21,7 +21,9 @@
 label {
   color: hsl(0, 1%, 44%);
   letter-spacing: 3px;
-  font-weight: 700;
+}
+input {
+    font-weight: 700;
 }
 input::placeholder {
   font-size: 18px;
